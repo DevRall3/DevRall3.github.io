@@ -3,10 +3,10 @@
         <img src="/homeicon.png" alt="Home" class="homeIcon">
         <ul>
             <li class="home"><a href="">Home</a></li>
-            <li class="clicker"><a href="http://localhost:5173/clicker">Clicker</a></li>
-            <li class="todoapp"><a href="http://localhost:5173/todoapp">To-do App</a></li>
-            <li class="telltale"><a href="http://localhost:5173/telltale">Telltale</a></li>
-            <li class="loginprototype"><a href="http://localhost:5173/loginprototype">Login Prototype</a></li>
+            <li class="clicker"><a href="/clicker">Clicker</a></li>
+            <li class="todoapp"><a href="/todoapp">To-do App</a></li>
+            <li class="telltale"><a href="/telltale">Telltale</a></li>
+            <li class="loginprototype"><a href="/loginprototype">Login Prototype</a></li>
         </ul>
     </header>
 

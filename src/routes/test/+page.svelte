@@ -6,11 +6,11 @@
   <title>Home</title>
   
   <div class="topLinks">
-    <a class="linkClass" href="http://localhost:5173/">Home</a>
-    <a class="linkClass" href="http://localhost:5173/telltale/">Telltale </a>
-    <a class="linkClass" href="http://localhost:5173/clicker/">Clicker </a>
-    <a class="linkClass" href="http://localhost:5173/todoapp/">To-do App</a>
-    <a class="linkClass" href="http://localhost:5173/typegame/">Typegame</a>
+    <a class="linkClass" href="/">Home</a>
+    <a class="linkClass" href="/telltale/">Telltale </a>
+    <a class="linkClass" href="/clicker/">Clicker </a>
+    <a class="linkClass" href="/todoapp/">To-do App</a>
+    <a class="linkClass" href="/typegame/">Typegame</a>
   </div>
   <body>
     <div class="main">

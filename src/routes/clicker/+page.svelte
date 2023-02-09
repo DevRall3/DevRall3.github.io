@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   
-    <a href="http://localhost:5173/" class="home">Home</a>
+    <a href="/" class="home">Home</a>
 
 
   <main>

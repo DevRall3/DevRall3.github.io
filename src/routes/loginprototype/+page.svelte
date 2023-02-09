@@ -13,8 +13,8 @@
                 <i></i>
             </div>
             <div class="links">
-                <a href="http://localhost:5173/forgotpassword">Forgot Password</a>
-                <a href="http://localhost:5173/signupprototype">Sign Up</a>
+                <a href="/forgotpassword">Forgot Password</a>
+                <a href="/signupprototype">Sign Up</a>
             </div>
             <input type="submit" value="Login">
         </div>

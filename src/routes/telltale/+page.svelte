@@ -2,7 +2,7 @@
   <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
 </svelte:head>
 
-<a href="http://localhost:5173/" class="home" style="color: #666666; padding: 5px;">Home</a>
+<a href="/" class="home" style="color: #666666; padding: 5px;">Home</a>
 
 <script>
                         // QUESTIONS

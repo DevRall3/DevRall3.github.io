@@ -5,7 +5,7 @@
 
 <title class="title">Todo App</title>
 <div class="home">
-    <a href="http://localhost:5173/" class="home">Home</a>
+    <a href="/" class="home">Home</a>
 </div>
 
 
