@@ -1,3 +1,7 @@
+<div class="home">
+    <a href="/">Home</a>
+</div>
+
 <body style="hight: 100%; width: 100%;">
     <div class="box">
         <div class="form">
@@ -22,6 +26,19 @@
 </body>
 
 <style>
+    .home a {
+        position: absolute;
+        text-decoration: none;
+        color: white;
+        padding: 5px;
+        font-family: 'Poppins', sans-serif;
+        font-size: x-large;
+    }
+
+    .home a:hover {
+        text-decoration: underline;
+    }
+
     body {
         margin: 0;
         padding: 0;

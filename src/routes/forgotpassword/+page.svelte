@@ -1,6 +1,9 @@
 <body>
     <div class="box">
         <div class="form">
+            <div class="backBtn">
+                <a href="/loginprototype" class="backBtn">{"<Back"}</a>
+            </div>
             <h2>Submit e-Mail</h2>
             <div class="inputBox">
                 <input type="text" required>
@@ -13,6 +16,18 @@
 </body>
 
 <style>
+    .backBtn {
+        position: relative;
+        transform: translateY(-20px);
+        font-size: 0.85em;
+        color: #8f8f8f;
+        text-decoration: none;
+    }
+
+    .backBtn:hover {
+        color: #45f3ff;
+    }
+
     body {
         margin: 0;
         padding: 0;

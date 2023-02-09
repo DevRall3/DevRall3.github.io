@@ -2,7 +2,6 @@
   <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
 </svelte:head>
 
-<a href="/" class="home" style="color: #666666; padding: 5px;">Home</a>
 
 <script>
                         // QUESTIONS
@@ -41,6 +40,10 @@
 </script>
 
     <main>
+      <div class="home">
+        <a href="/" class="home" style="color: #666666; padding: 5px;">Home</a>
+      </div>
+      
         <title class="title">Telltale Story</title>
         
         <h1>Telltale Story</h1>
@@ -63,6 +66,10 @@
     </main>
 
     <style>
+      .home a {
+        position: absolute;
+      }
+
        p {
         font-family: Georgia;
         border: none;
