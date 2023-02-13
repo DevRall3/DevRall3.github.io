@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>Home</title>
+</svelte:head>
+
 <body>
     <header>
         <img src="/homeicon.png" alt="Home" class="homeIcon">

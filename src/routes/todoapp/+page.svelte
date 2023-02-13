@@ -1,6 +1,6 @@
 <svelte:head>
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
-
+    <title>To-do App</title>
 </svelte:head>
 
 <title class="title">Todo App</title>

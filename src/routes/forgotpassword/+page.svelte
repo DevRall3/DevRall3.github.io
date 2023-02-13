@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>Forgot Password</title>
+</svelte:head>
+
 <body>
     <div class="box">
         <div class="form">

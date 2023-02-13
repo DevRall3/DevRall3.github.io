@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>Log In</title>
+</svelte:head>
+
 <div class="home">
     <a href="/">Home</a>
 </div>
