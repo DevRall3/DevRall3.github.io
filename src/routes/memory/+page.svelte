@@ -1,6 +1,6 @@
 <script>
     let cards = [];
-    for (let index = 0; index < 4; index++) {
+    for (let index = 0; index < 16; index++) {
       cards.push({
         id: 5, // TODO: unique ids per card card
         img: "/notrick.gif", // TODO: unique images per card card
@@ -62,8 +62,8 @@
     .row {
       display: grid;
       gap: 20px;
-      grid-template-columns: repeat(3, 100px);
-      grid-template-rows: repeat(3, 100px);
+      grid-template-columns: repeat(4, 100px);
+      grid-template-rows: repeat(4, 100px);
     }
     .card {
       border: 1px solid black;

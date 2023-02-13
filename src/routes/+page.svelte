@@ -18,7 +18,7 @@
         <img src="/stars.png" class="stars" alt="star" style="width:100%; height:70vh;">
     </section>
     <div class="box">
-        <h2>Hello</h2>
+        <h2>Hello!</h2>
     </div>
     <section>
         <img src="/mountains_front.png" class="mountains_front" alt="mountains_front" style="width:100%; height:100%;">

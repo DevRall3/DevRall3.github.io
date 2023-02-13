@@ -26,6 +26,8 @@
         font-size: 0.85em;
         color: #8f8f8f;
         text-decoration: none;
+
+        transition: all 0.1s;
     }
 
     .backBtn:hover {

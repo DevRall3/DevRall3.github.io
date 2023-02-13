@@ -33,14 +33,16 @@
     .home a {
         position: absolute;
         text-decoration: none;
-        color: white;
+        color: #8f8f8f;
         padding: 5px;
         font-family: 'Poppins', sans-serif;
         font-size: x-large;
+
+        transition: all 0.1s;
     }
 
     .home a:hover {
-        text-decoration: underline;
+        color: #45f3ff;
     }
 
     body {
@@ -182,6 +184,8 @@
         font-size: 0.75em;
         color: #8f8f8f;
         text-decoration: none;
+
+        transition: all 0.1s;
     }
 
     .links a:hover,
