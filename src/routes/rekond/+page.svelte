@@ -359,7 +359,7 @@
     </div>
   </div>
   <div id="nästa">
-    <a href="mailto:ralle.mikaelsson@hotmail.com?subject=The%20subject%20of%20the%20mail&body=The%20body%20of%20the%20email"><button class="btn btn-lg">Färdig? Tryck för att Kontakta</button></a>
+    <a href="mailto:ralle.mikaelsson@hotmail.com?subject=Bilrekonditionering: &body=Vad:"><button class="btn btn-lg">Färdig? Tryck för att Kontakta</button></a>
   </div>
   <div class="bg-base-100 flex flex-col w-full border-opacity-50">
     <div class="divider">Products</div>
@@ -448,6 +448,16 @@
 
 
 <script>
+
+  import { onMount } from 'svelte';
+
+  let photos = [];
+
+  onMount(async () => {
+    const res = await fetch(`/tutorial/api/album`);
+    photos = await res.json();
+  });
+
   let rasmusbool = true;
   let rasmusbool1 = true;
   let rasmusbool2 = true;
