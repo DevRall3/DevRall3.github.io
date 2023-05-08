@@ -1,10 +1,10 @@
 <script>
     let cards = [];
-    for (let index = 0; index < 16; index++) {
+    for (let index = 0; index < 8; index++) {
       cards.push({
         id: 5, // TODO: unique ids per card card
         img: "/notrick.gif", // TODO: unique images per card card
-        flipped: true,  // TODO: think
+        flipped: false,  // TODO: think
         completed: false,
       });
     }
