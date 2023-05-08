@@ -25,7 +25,7 @@
             </div>
         </div>
 
-        <div class="dropdown_menu" class:open={openBool}>
+        <div style="z-index: 1000;" class="dropdown_menu" class:open={openBool}>
             <li><a href="/">Home</a></li>
             <li><a href="/clicker">Clicker</a></li>
             <li><a href="/todoapp">Todo</a></li>
