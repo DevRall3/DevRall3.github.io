@@ -54,9 +54,6 @@
         cards = cards;
       } 
       
-      else {
-        alert("chill");
-      }
     }
 
     function shuffleArray(array) {
@@ -81,9 +78,9 @@
       },1001)
     }
   </script>
-  
+  <a href="/" class="homeBtn" style="position: absolute; color:var(--text-color);"><h1>Home</h1></a>
   <main>
-    <a href="/"><h1>Home</h1></a>
+    
     <div class="row">
       {#each cards as card, i}
         <div
@@ -103,7 +100,7 @@
     </div>
     <div class="score">
       <h1>Score: {score}</h1>
-      <button on:click={()=>reset()}>Reset</button>
+      <button on:click={()=>reset()}>RESET</button>
     </div>
     <div>
       
@@ -126,6 +123,7 @@
       grid-template-rows: repeat(2, 150px);
       max-height: fit-content;
     }
+    /* Cards CSS */
     .card {
       border: 1px solid black;
       cursor: pointer;
@@ -152,6 +150,7 @@
       position: absolute;
       border-radius: 16px;
     }
+    /* Score and reset CSS */
     .score {
       display: flex;
       flex-direction: row;
@@ -159,14 +158,21 @@
       width: 100%;
       margin-top: 25px;
     }
-
     .score * {
       border: 1px black solid;
       padding: 8px;
       border-radius: 5px;
     }
+    /* Home Button */
+    .homeBtn {
+      color: var(--text-color);
+      font-weight: bold;
+      font-size: 24px;
+      margin-left: 10px;
+    }
 
     :root {
       --background-color: #FFDB58;
+      --text-color: white;
     }
   </style>
