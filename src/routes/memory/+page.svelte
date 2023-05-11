@@ -3,8 +3,9 @@
 </svelte:head>
 
 <script>
+    let score = 0;
     let cards = [];
-    let imgList = ['notrick.gif','moon.png','memorycard.jpg'];
+    let imgList = ['banan.jpg', 'cactus.jpg', 'cherry.jpg', 'telphone.jpg'];
     for (let index = 0; index < imgList.length*2; index++) {
       cards.push({
         id: index, 
@@ -24,12 +25,13 @@
         for (var i = 0; i < cards.length; i++) {
           if (cards[i].flipped && !cards[i].completed && cards[i].id !== card.id) {
             if (cards[i].img === card.img) {
+              score++;
               card.completed = true;
               cards[i].completed = true;
             } else {
               setTimeout(() => {
-                card.flipped = false;
-                cards[i].flipped = false;
+               card.flipped = false;
+              cards[i].flipped = false;
               }, 1000);
             }
             break;
@@ -64,10 +66,24 @@
           array[i] = array[j];
           array[j] = temp;
       }
+
+
+    }
+    function reset() {
+      for (let i = 0; i < cards.length; i++) {
+        cards[i].completed = false;
+        cards[i].flipped = false;
+        score=0;
+      }
+      setTimeout(()=>{
+        shuffleArray(cards)
+        cards = cards;
+      },1001)
     }
   </script>
   
   <main>
+    <a href="/"><h1>Home</h1></a>
     <div class="row">
       {#each cards as card, i}
         <div
@@ -81,24 +97,34 @@
           class="card"
         >
           <img class="front" src={card.img} alt="" />
-          <img class="back" src='./memorycard.jpg' alt="" />
+          <img class="back" src='./memorycardback.png' alt="" />
         </div>
       {/each}
+    </div>
+    <div class="score">
+      <h1>Score: {score}</h1>
+      <button on:click={()=>reset()}>Reset</button>
+    </div>
+    <div>
+      
     </div>
   </main>
   
   <style>
     main {
-      margin-top: 50px;
+      height: 100vh;
       display: flex;
+      flex-direction: column;
       place-content: center;
       place-items: center;
+      background: var(--background-color);
     }
     .row {
       display: grid;
       gap: 20px;
       grid-template-columns: repeat(4, 150px);
-      grid-template-rows: repeat(4, 150px);
+      grid-template-rows: repeat(2, 150px);
+      max-height: fit-content;
     }
     .card {
       border: 1px solid black;
@@ -125,5 +151,22 @@
       -webkit-backface-visibility: hidden;
       position: absolute;
       border-radius: 16px;
+    }
+    .score {
+      display: flex;
+      flex-direction: row;
+      place-content: space-evenly;
+      width: 100%;
+      margin-top: 25px;
+    }
+
+    .score * {
+      border: 1px black solid;
+      padding: 8px;
+      border-radius: 5px;
+    }
+
+    :root {
+      --background-color: #FFDB58;
     }
   </style>
