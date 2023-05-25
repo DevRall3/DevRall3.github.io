@@ -94,7 +94,7 @@
           class="card"
         >
           <img class="front" src={card.img} alt="" />
-          <img class="back" src='./memorycardback.png' alt="" />
+          <img class="back" src='./kort.png' alt="" />
         </div>
       {/each}
     </div>
@@ -114,7 +114,7 @@
       flex-direction: column;
       place-content: center;
       place-items: center;
-      background: var(--background-color);
+      background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
     }
     .row {
       display: grid;
@@ -125,7 +125,6 @@
     }
     /* Cards CSS */
     .card {
-      border: 1px solid black;
       cursor: pointer;
       transition: transform 1s;
       transform-style: preserve-3d;
@@ -157,9 +156,10 @@
       place-content: space-evenly;
       width: 100%;
       margin-top: 25px;
+      color: white;
     }
     .score * {
-      border: 1px black solid;
+      border: 1px white solid;
       padding: 8px;
       border-radius: 5px;
     }
@@ -172,7 +172,7 @@
     }
 
     :root {
-      --background-color: #FFDB58;
+      /* --background-color: #FFDB58; */
       --text-color: white;
     }
   </style>
